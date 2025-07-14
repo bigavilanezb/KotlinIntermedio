@@ -21,9 +21,7 @@ class MainActivity : AppCompatActivity() {
         // enumClasses()
 
         // Nested and Inner Classes
-        // nestedAndInnerClasses()
-
-        //
+        nestedAndInnerClasses()
     }
 
     enum class Direction(val dir: Int) {
