@@ -19,6 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         // Enum classes
         // enumClasses()
+
+        // Nested and Inner Classes
+        nestedAndInnerClasses()
     }
 
     enum class Direction(val dir: Int) {
@@ -60,5 +63,18 @@ class MainActivity : AppCompatActivity() {
 
         // Inicialización
         println(userDirection.dir)
+    }
+
+    private fun nestedAndInnerClasses() {
+
+        // Clase Anidada (Nested)
+        val myNestedClass = MyNestedAndInnerClass.MyNestedClass()
+        val sum = myNestedClass.sum(10, 6)
+        println("El resultado de la suma es: $sum")
+
+        // Clase Interna (Inner)
+        val myInnerClass = MyNestedAndInnerClass().MyInnerClass()
+        val sumTwo = myInnerClass.sumTwo(10)
+        println("El resultado de sumar dos es: $sumTwo")
     }
 }
