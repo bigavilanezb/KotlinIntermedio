@@ -18,10 +18,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Enum classes
-        // enumClasses()
+        enumClasses()
 
         // Nested and Inner Classes
         nestedAndInnerClasses()
+
+        // Class Inheritance
+        classInheritance()
     }
 
     enum class Direction(val dir: Int) {
@@ -65,6 +68,8 @@ class MainActivity : AppCompatActivity() {
         println(userDirection.dir)
     }
 
+    // Lección 2 Kotlin Inermedio: Nested and Inner class
+
     private fun nestedAndInnerClasses() {
 
         // Clase Anidada (Nested)
@@ -76,5 +81,21 @@ class MainActivity : AppCompatActivity() {
         val myInnerClass = MyNestedAndInnerClass().MyInnerClass()
         val sumTwo = myInnerClass.sumTwo(10)
         println("El resultado de sumar dos es: $sumTwo")
+    }
+
+    // Lección 3 Kotlin Intermedio: Class Inheritance
+
+    private fun classInheritance() {
+
+        val person = Person("Sara", 40)
+
+        val programmer = Programmer("Bryan", 25, "Kotlin")
+        programmer.work()
+        programmer.sayLanguage()
+        programmer.goToWork()
+        programmer.drive()
+
+        val designer = Designer("Dani", 24)
+        designer.work()
     }
 }
