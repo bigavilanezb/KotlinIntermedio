@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Enum classes
-        enumClasses()
+        // enumClasses()
     }
 
     enum class Direction(val dir: Int) {
